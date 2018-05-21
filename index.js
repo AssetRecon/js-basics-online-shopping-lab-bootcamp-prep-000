@@ -10,14 +10,12 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
  var currentCart = {itemName: item, itemPrice: Math.floor(Math.random()*100)};
  cart.push(currentCart);
  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
-  // write your code here
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   }
@@ -32,7 +30,6 @@ return`In your cart, you have ${itemAndPrice.join(", ")}.`
 }
 
 function total() {
-  // write your code here
   var cartTotal = []
   for (let i = 0; i<cart.length;i++){
     cartTotal.push(cart[i].itemPrice)
@@ -42,7 +39,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  if item 
   
 }
 
