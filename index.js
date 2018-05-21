@@ -39,16 +39,16 @@ function total() {
 }
 
 function removeFromCart(item) {
+ if (cart.indexOf(item) === -1) {
+   return "That item is not in your cart."
+ }
+  
+  
   for (let i = 0; i<cart.length;i++) {
     if (cart[i].itemName === item) {
       cart.splice(i,1)
     }
     }
-  
-  cart.indexof
- if(found === undefined) {
-   console.log("That item is not in your cart.")
-
      return cart
  }
 
