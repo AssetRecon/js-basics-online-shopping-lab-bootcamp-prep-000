@@ -25,7 +25,7 @@ function viewCart() {
     var itemAndPrice = []
     for (let i = 0; i<cart.length;i++) {
     if (i+1 != cart.length || i ===0){
-    itemAndPrice.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+    itemAndPrice.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
     
     } else { itemAndPrice.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
