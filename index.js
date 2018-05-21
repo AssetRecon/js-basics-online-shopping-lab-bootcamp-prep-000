@@ -46,12 +46,11 @@ function removeFromCart(item) {
     }
     
   
-  var found = cart.find(function(element) {
-  return element > 500;
+  var found = cart.find(function(item) {
+  return item > 500;
 });
  if(found === undefined) {
    console.log("work")}
-  
   
   return cart
 
