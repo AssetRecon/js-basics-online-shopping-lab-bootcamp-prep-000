@@ -46,15 +46,14 @@ function removeFromCart(item) {
     }
     
   
-  var found = cart.find(function(item) {
-  return item > 500;
+  var found = cart.find(function(element) {
+  return element === item;
 });
  if(found === undefined) {
-   console.log("work")}
-  
-  return cart
-
-}
+   console.log("That item is not in your cart.")
+ } else {
+     return cart}
+ }
 
 function placeOrder(cardNumber) {
   // write your code here
