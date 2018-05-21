@@ -49,9 +49,9 @@ function removeFromCart(item) {
 //       }
     }
  }
-// return cart;
- 
- 
+ if (cart.indexOf(item) === -1) {
+   return "That item is not in your cart."
+ }
  }
 
 function placeOrder(cardNumber) {
