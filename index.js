@@ -35,8 +35,8 @@ function total() {
     cartTotal.push(cart[i].itemPrice);
   }
   function add(a,b){return a+b}
-  
-  return cartTotal.reduce(add,0);
+  var sum = cartTotal.reduce(add,0);
+  return sum;
 }
 
 function removeFromCart(item) {
