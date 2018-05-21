@@ -11,11 +11,33 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
+ var currentCart = {itemName: item, itemPrice: Math.floor(Math.random()*100)};
+ cart.push(currentCart);
+ return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
   // write your code here
+  if (cart.length === 0) {
+    return "Your shopping cart is empty."
+  }
+    
+    var itemAndPrice = []
+    for (let i = 0; i<cart.length;i++) {
+    itemAndPrice.push(`${cart[i][itemName]} at $${cart[i][itemPrice]}`)
+   
+   
+     // for (var itemName in cart[i]){
+    //  cartContents.push(`${itemName} at //$${cart[i][itemName]}`)
+    }
+return`In your cart, you have ${itemAndPrice}.`
 }
+
+
+
+console.log(addToCart("fruit"))
+console.log(addToCart("veggie"))
+console.log(viewCart())
 
 function total() {
   // write your code here
