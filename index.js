@@ -21,22 +21,15 @@ function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   }
-    
     var itemAndPrice = []
     for (let i = 0; i<cart.length;i++) {
     if (i+1 != cart.length || i ===0){
     itemAndPrice.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
-    
     } else { itemAndPrice.push(`and ${cart[i].itemName} at $${cart[i].itemPrice}`)
-    }
-    }
+      }
+        }
 return`In your cart, you have ${itemAndPrice.join(", ")}.`
 }
-
-
-console.log(addToCart("fruit"))
-console.log(addToCart("veggie"))
-console.log(viewCart())
 
 function total() {
   // write your code here
