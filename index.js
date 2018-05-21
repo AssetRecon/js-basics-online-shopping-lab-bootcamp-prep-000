@@ -44,15 +44,12 @@ function removeFromCart(item) {
       cart.splice(i,1)
     }
     }
-    
   
-  var found = cart.find(function(element) {
-  return element === item;
-});
+  
  if(found === undefined) {
    console.log("That item is not in your cart.")
- } else {
-     return cart}
+
+     return cart
  }
 
 function placeOrder(cardNumber) {
