@@ -34,8 +34,12 @@ function total() {
   for (let i = 0; i<cart.length;i++){
     cartTotal.push(cart[i].itemPrice);
   }
-  function add(a,b){return a+b}
-  var sum = cartTotal.reduce(add,0);
+//  function add(a,b){return a+b}
+  //var sum = cartTotal.reduce(add,0);
+  
+  sum = cart.reduce(function(a, b) {
+  return a + b})
+  
   return sum;
 }
 
