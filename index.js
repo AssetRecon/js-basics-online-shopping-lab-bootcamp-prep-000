@@ -24,11 +24,15 @@ function viewCart() {
     
     var itemAndPrice = []
     for (let i = 0; i<cart.length;i++) {
+    if (i != cart.length){
     itemAndPrice.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+    
+    } else { itemAndPrice.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}`)
+      
     }
 return`In your cart, you have ${itemAndPrice}.`
 }
-
+}
 
 
 console.log(addToCart("fruit"))
