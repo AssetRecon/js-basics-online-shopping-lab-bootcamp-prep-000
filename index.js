@@ -30,13 +30,13 @@ return`In your cart, you have ${itemAndPrice.join(", ")}.`
 }
 
 function total() {
-  var cartTotal = []
+  var cartTotal = [];
   for (let i = 0; i<cart.length;i++){
-    cartTotal.push(cart[i].itemPrice)
+    cartTotal.push(cart[i].itemPrice);
   }
   function add(a,b){return a+b}
   
-  return cartTotal.reduce(add,0)
+  return cartTotal.reduce(add,0);
 }
 
 function removeFromCart(item) {
@@ -47,7 +47,7 @@ function removeFromCart(item) {
     }
  }
  if (cart.indexOf(item) === -1) {
-   return "That item is not in your cart."
+   return "That item is not in your cart.";
     }
  }
 
@@ -56,5 +56,5 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you.";
   }
   cart = [];
-  return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
+  return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;  
 }
