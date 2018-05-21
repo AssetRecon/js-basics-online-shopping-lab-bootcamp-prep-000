@@ -44,10 +44,12 @@ function removeFromCart(item) {
       cart.splice(i,1)
     }
     }
-   // if (cart.find(item) === undefined) {
-     // return console.log("That item is not in your cart.")
-   // }
+    
+   if (cart.find(item) === undefined) {
+      return console.log("That item is not in your cart.")
+    } else {
   return cart
+    }
 }
 
 function placeOrder(cardNumber) {
