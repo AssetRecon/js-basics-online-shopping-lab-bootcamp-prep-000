@@ -33,7 +33,10 @@ return`In your cart, you have ${itemAndPrice.join(", ")}.`
 
 function total() {
   // write your code here
-  var cartTotal = for
+  var cartTotal
+  for (let i = 0; i<cart.length;i++){
+    cart[i].itemPrice
+  }
 }
 
 function removeFromCart(item) {
