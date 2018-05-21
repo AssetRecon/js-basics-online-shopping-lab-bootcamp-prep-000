@@ -45,11 +45,16 @@ function removeFromCart(item) {
     }
     }
     
-   if (cart.find(item) === undefined) {
-      return console.log("That item is not in your cart.")
-    } else {
+  
+  var found = cart.find(function(element) {
+  return element > 500;
+});
+ if(found === undefined) {
+   console.log("work")}
+  
+  
   return cart
-    }
+
 }
 
 function placeOrder(cardNumber) {
